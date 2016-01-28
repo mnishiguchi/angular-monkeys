@@ -1,0 +1,17 @@
+<div class="resources">
+
+  <h1>Resources</h1>
+
+  <div ng-repeat="resource in app.resources">
+
+    <p>
+      <a ng-href="{{ resource.linkUrl }}">
+        {{ resource.name }}
+      </a>
+      <br />
+      {{ resource.desc }}
+    </p>
+
+  </div>
+
+</div>

@@ -2,6 +2,42 @@
 
   <h1>Gallery</h1>
 
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil earum sint odit iusto, quae animi inventore eius voluptas molestias. Quisquam voluptatibus sed accusamus, beatae omnis velit ipsam sint aliquam necessitatibus.</p>
+  <div class="card-columns monkies" >
 
-</div>
+    <div class="card monkie" ng-repeat="monkie in app.monkies">
+
+      <!-- Image of a monkey -->
+      <a ng-href="{{ monkie.linkUrl }}">
+        <img
+          class="card-img-top"
+          ng-src="{{ monkie.imgUrl }}"
+          alt="{{ monkie.name }}"
+          title="{{ monkie.name }}"
+          style="width: 100%;" >
+      </a>
+
+      <!-- Name and description of a monkey -->
+      <div class="card-block">
+        <h4
+          class="card-title"
+          ng-if="monkie.name.length > 1">
+          {{ monkie.name }}
+        </h4>
+        <p
+          class="card-text"
+          ng-if="monkie.desc.length > 1">
+          {{ monkie.desc }}
+        </p>
+        <a
+          ng-if="monkie.linkUrl.length > 1"
+          ng-href="{{ monkie.linkUrl }}"
+          class="btn btn-primary">
+          Details
+        </a>
+      </div>
+
+    </div><!-- /.monkie -->
+
+  </div><!-- /.monkies -->
+
+</div><!-- /.gallery -->
