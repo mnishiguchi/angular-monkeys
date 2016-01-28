@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+
+/*
+  App-wide basic app styles.
+ */
+
+
+html {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: #cdcdcd;
+  width: 100%;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#logo {
+  font-size: 2.0em;
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+  text-align: middle;
+  letter-spacing: -5px;
+  margin-right: 20px;
+}
+
+footer {
+  padding: 0 0 30px 0;
+}
+
+
+/*
+  Template styles.
+ */
+
+
+.page.container {
+  margin-top: 30px;
+}
+
+.home img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #FFFFFF;
+}
+
