@@ -2,17 +2,17 @@
 
   <h1>Gallery</h1>
 
-  <div class="card-columns monkies" >
+  <div class="card-columns monkeys" >
 
-    <div class="card monkie" ng-repeat="monkie in app.monkies">
+    <div class="card monkey" ng-repeat="monkey in app.monkeys">
 
       <!-- Image of a monkey -->
-      <a ng-href="{{ monkie.linkUrl }}">
+      <a ng-href="{{ monkey.linkUrl }}">
         <img
           class="card-img-top"
-          ng-src="{{ monkie.imgUrl }}"
-          alt="{{ monkie.name }}"
-          title="{{ monkie.name }}"
+          ng-src="{{ monkey.imgUrl }}"
+          alt="{{ monkey.name }}"
+          title="{{ monkey.name }}"
           style="width: 100%;" >
       </a>
 
@@ -20,24 +20,24 @@
       <div class="card-block">
         <h4
           class="card-title"
-          ng-if="monkie.name.length > 1">
-          {{ monkie.name }}
+          ng-if="monkey.name.length > 1">
+          {{ monkey.name }}
         </h4>
         <p
           class="card-text"
-          ng-if="monkie.desc.length > 1">
-          {{ monkie.desc }}
+          ng-if="monkey.desc.length > 1">
+          {{ monkey.desc }}
         </p>
         <a
-          ng-if="monkie.linkUrl.length > 1"
-          ng-href="{{ monkie.linkUrl }}"
+          ng-if="monkey.linkUrl.length > 1"
+          ng-href="{{ monkey.linkUrl }}"
           class="btn btn-primary">
           Details
         </a>
       </div>
 
-    </div><!-- /.monkie -->
+    </div><!-- /.monkey -->
 
-  </div><!-- /.monkies -->
+  </div><!-- /.monkeys -->
 
 </div><!-- /.gallery -->

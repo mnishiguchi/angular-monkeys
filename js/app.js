@@ -21,7 +21,7 @@
     function AppController() {
 
       // The base page title.
-      var baseTitle = "Monkies";
+      var baseTitle = "Monkeys";
 
       // Register pages here.
       // - name:        "page id"
@@ -50,7 +50,7 @@
         }
       ];
 
-      this.monkies   = monkies;
+      this.monkeys   = monkeys;
       this.resources = resources;
 
       // By default, "home" is selected.
@@ -100,8 +100,8 @@
   // ---------------------------------- //
 
 
-  // The information on monkies to be displayed in the gallery.
-  var monkies = [
+  // The information on monkeys to be displayed in the gallery.
+  var monkeys = [
     {
       name: "Japanese macaque (日本猿)",
       imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/JapaneseMacaqueM2218.jpg/200px-JapaneseMacaqueM2218.jpg",
