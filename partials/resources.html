@@ -1,8 +1,10 @@
-<div class="resources">
+<top-navbar></top-navbar>
+
+<div class="resources container">
 
   <h1>Resources</h1>
 
-  <div ng-repeat="resource in app.resources">
+  <div ng-repeat="resource in vm.resources">
 
     <p>
       <a ng-href="{{ resource.linkUrl }}">

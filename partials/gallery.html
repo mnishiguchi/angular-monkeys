@@ -1,10 +1,12 @@
-<div class="gallery">
+<top-navbar></top-navbar>
+
+<div class="gallery container">
 
   <h1>Gallery</h1>
 
   <div class="card-columns monkeys" >
 
-    <div class="card monkey" ng-repeat="monkey in app.monkeys">
+    <div class="card monkey" ng-repeat="monkey in vm.monkeys">
 
       <!-- Image of a monkey -->
       <a ng-href="{{ monkey.linkUrl }}">

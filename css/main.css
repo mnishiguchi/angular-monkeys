@@ -44,7 +44,10 @@ p {
  */
 
 
-.page.container {
+.home,
+.info,
+.gallery,
+.resources {
   margin-top: 30px;
 }
 .home img {
