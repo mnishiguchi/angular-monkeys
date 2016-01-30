@@ -11,7 +11,7 @@
       // Return the API.
       return {
 
-        getData: function getData() { return information; }
+        getData: function getData() { return resouces; }
 
       };
 
@@ -19,7 +19,7 @@
     } // end ResourcesData
 
 
-    var information = [
+    var resouces = [
 
       {
         name: "The Impossible Housing and Handling Conditions of Monkeys in Research Laboratories",

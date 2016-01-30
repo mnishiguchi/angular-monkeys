@@ -33,17 +33,25 @@
           title:       "Home",
           templateUrl: "partials/home.html"
       })
-      .when("/info", {
-          title:       "Info",
-          templateUrl: "partials/info.html"
+      .when("/information", {
+          title:       "Information",
+          templateUrl: "partials/information.html"
       })
-      .when("/gallery", {
-          title:       "Gallery",
-          templateUrl: "partials/gallery.html",
-          controller:   GalleryController,
-          controllerAs: "vm",
-          resolve:      GalleryController.resolve
+      .when("/species", {
+          title:       "Species",
+          templateUrl: "partials/species.html"
       })
+      .when("/interaction", {
+          title:       "Interaction",
+          templateUrl: "partials/interaction.html"
+      })
+      // .when("/gallery", {
+      //     title:       "Gallery",
+      //     templateUrl: "partials/gallery.html",
+      //     controller:   GalleryController,
+      //     controllerAs: "vm",
+      //     resolve:      GalleryController.resolve
+      // })
       .when("/resources", {
           title:       "Resources",
           templateUrl: "partials/resources.html",
